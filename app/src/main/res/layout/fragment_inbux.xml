@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    android:gravity="center"
+    tools:context=".InbuxFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B7FFFFFF"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:text="Your peace of mind is priceless" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6AFFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="15dp"
+        android:text="Well done , All your tasks are organized in the right place " />
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B7EF2E2E"
+        android:textSize="30sp"
+        android:text="Share #With  Friends" />
+
+</LinearLayout>
