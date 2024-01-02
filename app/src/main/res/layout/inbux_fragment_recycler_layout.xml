@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Completed Task"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/bottom_nav_icon_color"
+        android:layout_height="wrap_content"   />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvForInbox"
+        tools:listitem="@layout/custom_todo_row"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

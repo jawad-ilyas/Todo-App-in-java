@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#000"
-    android:gravity="center"
+    android:paddingHorizontal="30dp"
     tools:context=".SearchFrag">
 
     <!-- TODO: Update blank fragment layout -->
@@ -14,6 +15,8 @@
         android:layout_height="wrap_content"
         android:textColor="#B7FFFFFF"
         android:textSize="25sp"
+
+        android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:text="Search Your Self" />
 
@@ -22,10 +25,79 @@
         android:layout_height="wrap_content"
         android:textColor="#6AFFFFFF"
         android:textSize="20sp"
+        android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="15dp"
         android:paddingHorizontal="15dp"
         android:text="Find tasks  , projects and more  " />
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvSearch"
+        android:hint="Search your Task"
+        android:textColorHint="#9FFFFFFF"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btnSearch"
+        android:textColor="#fff"
+        android:text="Search Your Task"
+        android:backgroundTint="#80E31E10"
+        android:layout_height="wrap_content"/>
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+        app:cardCornerRadius="23sp"
+       android:layout_marginTop="30dp"
+       app:cardBackgroundColor="#171616"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:padding="15dp"
+           android:visibility="gone"
+           android:id="@+id/searchLinearLayout"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Your Search Result "
+               android:textSize="20sp"
+                android:id="@+id/searchTitle"
+               android:layout_marginTop="30dp"
+               android:textColor="@color/bottom_nav_icon_color"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:id="@+id/taskTitle"
+               android:textSize="20sp"
+               android:layout_marginTop="30dp"
+               android:textColor="#fff"/>
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textSize="20sp"
+               android:id="@+id/taskDesc"
+               android:layout_marginTop="4dp"
+               android:textColor="#fff"/>
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
 
 
 

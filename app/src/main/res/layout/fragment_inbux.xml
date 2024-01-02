@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:textColor="#B7EF2E2E"
         android:textSize="30sp"
+        android:id="@+id/tvTotalCounts"
         android:text="Share #With  Friends" />
 
 </LinearLayout>
